@@ -2,5 +2,6 @@
   "name": "Sample Site",
   "sidebar": [
     ["Getting Started", "/getting-started"],
+    ["Why MayaJS", "/why-mayajs"],
   ]
 }
