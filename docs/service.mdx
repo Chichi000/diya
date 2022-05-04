@@ -1,1 +1,28 @@
 # Service
+
+Services can make your code shareable accross your application. A service can be injected inside of a controller or another service inside a class constructor. You can seperate your business logic inside your routes using a service and share it across different services.
+
+To generate a service you can run this command on your terminal.
+
+```js
+maya generate services "service-path"
+```
+
+Short hand command.
+
+```js
+maya g s "service-path"
+```
+
+This command will create a service file based on the service-path provided.
+
+Below shows a codeblock generated inside the service file.
+
+```js
+import { Injectable } from "@mayajs/core";
+
+@Injectable() // This decorator allows this class to be injected on other modules
+export class SampleServices {
+  constructor( // Inject other services here) {}
+}
+```
