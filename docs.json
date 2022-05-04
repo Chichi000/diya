@@ -5,5 +5,6 @@
     ["Why MayaJS", "/why-mayajs"],
     ["Controllers", "/controllers"],
     ["Models", "/models"],
+    ["Service", "/service"],
   ]
 }
