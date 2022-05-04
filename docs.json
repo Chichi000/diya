@@ -6,5 +6,6 @@
     ["Controllers", "/controllers"],
     ["Models", "/models"],
     ["Service", "/service"],
+    ["Routes", "/routes"],
   ]
 }
