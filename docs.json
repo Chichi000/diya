@@ -8,5 +8,6 @@
     ["Service", "/service"],
     ["Routes", "/routes"],
     ["Methods", "/methods"],
+    ["Databases", "/databases"]
   ]
 }
