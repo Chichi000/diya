@@ -4,5 +4,6 @@
     ["Getting Started", "/getting-started"],
     ["Why MayaJS", "/why-mayajs"],
     ["Controllers", "/controllers"],
+    ["Models", "/models"],
   ]
 }
