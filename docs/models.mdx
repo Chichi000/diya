@@ -1,1 +1,43 @@
 # Models
+
+This will define the model that a controller can use to communicate to a database. This model is also mapped the data/fields to be save or modified to a database. Our framework support both MongoDB and Sql database. See database section for more informations on how to implement these databases.
+
+To generate a model you can run this command on your terminal.
+
+```js
+maya generate model "model-path"
+```
+
+Short hand command.
+
+```js
+maya g m "model-path"
+```
+
+This command will create a model file based on the model-path provided.
+
+Below shows a codeblock generated inside the model file.
+
+**Model for MongoDB Databases**
+
+```js
+import { MongoSchema, MongoModel } from "@mayajs/mongo";
+
+const schema = MongoSchema({
+  // Add mongo fields here
+});
+
+export default MongoModel("Sample", schema);
+```
+
+**Model for Sql Databases**
+
+```js
+import { SqlModel } from "@mayajs/sql";
+
+const schema = {
+  // Add sql fields here
+};
+
+export default SqlModel("Sample", schema, {});
+```
