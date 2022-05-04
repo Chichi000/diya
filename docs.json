@@ -1,7 +1,6 @@
 {
   "name": "Sample Site",
   "sidebar": [
-    ["Example", "/example"],
-    ["Expandable", [["Nested Example", "/example-nested"]]]
+    ["Getting Started", "/getting-started"],
   ]
 }
