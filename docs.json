@@ -7,5 +7,6 @@
     ["Models", "/models"],
     ["Service", "/service"],
     ["Routes", "/routes"],
+    ["Methods", "/methods"],
   ]
 }
