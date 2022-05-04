@@ -1,0 +1,69 @@
+# Getting Started
+
+In order to start using mayajs you must install the latest stable version of [Nodejs](https://nodejs.org/en/) on your local machine.
+Having a prior knowledge in [Typescript](https://www.typescriptlang.org/) or [Angular](https://angular.io/) will help you alot. Like angular, mayajs uses typescript and much of the syntax implemented are heavily inspired from it.
+
+# Overview
+
+Mayajs is an ecosystem consist of several npm packages. All this packages are maintained by [Mayajs Core Team](https://mayajs.io/).
+
+- [@mayajs/core](https://www.npmjs.com/package/@mayajs/core) - Core library
+- [@mayajs/common](https://www.npmjs.com/package/@mayajs/common) - Common modules
+- [@mayajs/router](https://www.npmjs.com/package/@mayajs/router) - Routing library
+- [@mayajs/cli](https://www.npmjs.com/package/@mayajs/cli) - Project scaffolding
+- [@mayajs/mongo](https://www.npmjs.com/package/@mayajs/mongo) - MongoDB Plugin
+- [@mayajs/sql](https://www.npmjs.com/package/@mayajs/sql) - SQL Plugin
+
+# Installation
+
+The first thing we need to do is to install mayajs CLI globally in your local machine for project scaffolding.
+
+```js
+npm i @mayajs/cli -g
+```
+
+After installing the CLI we need to check if mayajs is recognized by the machine. This command will show the current version of mayajs installed in your machine.
+
+```sh
+maya -v
+```
+
+This command will show all the available commands that can be use for your mayajs app.
+
+```sh
+maya
+```
+
+Now mayajs is properly installed to your machine. It is time to create a basic mayajs project. For this purpose we will use mayajs CLI commands to generate the files necessary for you to run your first mayajs application.
+
+```js
+maya new "name-of-your-app"
+```
+
+# Imports
+
+To import mayajs to your existing project.
+
+```js
+import { MayaJS } from "@mayajs/core";
+```
+
+# Development
+
+You have created your first mayajs app but you don't know how to run it. Using the CLI commands you can run your app. But first you need to navigate to your app folder.
+
+```js
+cd "directory-of-your-app"
+```
+
+After you navigated to your app folder we can run the command to serve your mayajs app. The app will run on PORT:3333 by default.
+
+```js
+maya serve
+```
+
+To change the port you can just add the --port="port-number" as a flag with the command above.
+
+```js
+maya serve --port=4444
+```
